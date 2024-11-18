@@ -1,16 +1,16 @@
 class Residuo {
-    private String tipoResiduo;
+    private String tipo;
     private double quantidade;
     private PontoDeColeta pontoDeColeta;
 
-    public Residuo(String tipoResiduo, double quantidade, PontoDeColeta pontoDeColeta) {
-        this.tipoResiduo = tipoResiduo;
+    public Residuo(String tipo, double quantidade, PontoDeColeta pontoDeColeta) {
+        this.tipo = tipo;
         this.quantidade = quantidade;
         this.pontoDeColeta = pontoDeColeta;
     }
 
-    public String getTipoResiduo() {
-        return tipoResiduo;
+    public String getTipo() {
+        return tipo;
     }
 
     public double getQuantidade() {

@@ -9,7 +9,7 @@ public class Main {
 
         System.out.println("\n\n======================");
         System.out.println("Informações do resíduo:");
-        System.out.println("Tipo de resíduo: " + residuo.getTipoResiduo());
+        System.out.println("Tipo de resíduo: " + residuo.getTipo());
         System.out.println("Quantidade: " + residuo.getQuantidade());
         System.out.println("Ponto de coleta: " + residuo.getPontoDeColeta().getTipo());
 

@@ -8,6 +8,9 @@ public class Cobranca {
 
     }
 
+    /*
+     * Método que calcula a cobrança de um cliente
+     */
     public double calcularCobranca() {
         double valor = 0;
         if (cliente.getTipo().equals("Pessoa Física")) {
