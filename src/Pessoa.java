@@ -5,18 +5,15 @@ class Pessoa extends Cliente {
     private String endereco;
     private String telefone;
     private String email;
-    private String dataRegistro;
     private double consumo;
     private String cpf;
 
-    public Pessoa(String nome, String endereco, String telefone, String email,
-            String dataRegistro, String cpf) {
-        super(nome, cpf, endereco, telefone, email, dataRegistro);
+    public Pessoa(String nome, String endereco, String telefone, String email, String cpf) {
+        super(nome, cpf, endereco, telefone, email);
         this.nome = nome;
         this.endereco = endereco;
         this.telefone = telefone;
         this.email = email;
-        this.dataRegistro = dataRegistro;
         this.cpf = cpf;
     }
 
@@ -38,10 +35,6 @@ class Pessoa extends Cliente {
 
     public String getEmail() {
         return email;
-    }
-
-    public String getDataRegistro() {
-        return dataRegistro;
     }
 
     public double getConsumo() {
@@ -70,10 +63,6 @@ class Pessoa extends Cliente {
 
     public void setEmail(String email) {
         this.email = email;
-    }
-
-    public void setDataRegistro(String dataRegistro) {
-        this.dataRegistro = dataRegistro;
     }
 
     public void setConsumo(double consumo) {

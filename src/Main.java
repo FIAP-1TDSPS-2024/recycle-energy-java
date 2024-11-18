@@ -42,8 +42,6 @@ public class Main {
         String telefoneCliente = scanner.nextLine();
         System.out.println("Digite o email do cliente:");
         String emailCliente = scanner.nextLine();
-        System.out.println("Digite a data de registro:");
-        String dataRegistro = scanner.nextLine();
 
         Cliente cliente = null;
         if (tipoClienteNumber == 1) {
@@ -51,13 +49,13 @@ public class Main {
             String cpf = scanner.nextLine();
 
             cliente = new Pessoa(nomeCliente, enderecoCliente,
-                    telefoneCliente, emailCliente, dataRegistro, cpf);
+                    telefoneCliente, emailCliente, cpf);
         } else {
             System.out.println("Digite o CNPJ do cliente:");
             String cnpj = scanner.nextLine();
 
             cliente = new Empresa(nomeCliente, enderecoCliente,
-                    telefoneCliente, emailCliente, dataRegistro, cnpj);
+                    telefoneCliente, emailCliente, cnpj);
         }
 
         System.out.println("Informações do cliente:");
@@ -66,7 +64,6 @@ public class Main {
         System.out.println("Endereço: " + cliente.getEndereco());
         System.out.println("Telefone: " + cliente.getTelefone());
         System.out.println("Email: " + cliente.getEmail());
-        System.out.println("Data de Registro: " + cliente.getDataRegistro());
 
         System.out.println(cliente.verificarTipo());
 

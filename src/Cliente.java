@@ -4,17 +4,14 @@ class Cliente {
     private String endereco;
     private String telefone;
     private String email;
-    private String dataRegistro;
     private double consumo;
 
-    public Cliente(String nome, String tipo, String endereco, String telefone, String email,
-            String dataRegistro) {
+    public Cliente(String nome, String tipo, String endereco, String telefone, String email) {
         this.nome = nome;
         this.tipo = tipo;
         this.endereco = endereco;
         this.telefone = telefone;
         this.email = email;
-        this.dataRegistro = dataRegistro;
     }
 
     public String getNome() {
@@ -35,10 +32,6 @@ class Cliente {
 
     public String getEmail() {
         return email;
-    }
-
-    public String getDataRegistro() {
-        return dataRegistro;
     }
 
     public double getConsumo() {
@@ -63,10 +56,6 @@ class Cliente {
 
     public void setEmail(String email) {
         this.email = email;
-    }
-
-    public void setDataRegistro(String dataRegistro) {
-        this.dataRegistro = dataRegistro;
     }
 
     public void setConsumo(double consumo) {

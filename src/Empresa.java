@@ -4,19 +4,16 @@ class Empresa extends Cliente {
     private String endereco;
     private String telefone;
     private String email;
-    private String dataRegistro;
     private String cnpj;
     private double consumo;
 
-    public Empresa(String nome, String endereco, String telefone, String email,
-            String dataRegistro, String cnpj) {
-        super(nome, cnpj, endereco, telefone, email, dataRegistro);
+    public Empresa(String nome, String endereco, String telefone, String email, String cnpj) {
+        super(nome, cnpj, endereco, telefone, email);
         this.nome = nome;
         this.tipo = "Empresa";
         this.endereco = endereco;
         this.telefone = telefone;
         this.email = email;
-        this.dataRegistro = dataRegistro;
         this.cnpj = cnpj;
     }
 
@@ -38,10 +35,6 @@ class Empresa extends Cliente {
 
     public String getEmail() {
         return email;
-    }
-
-    public String getDataRegistro() {
-        return dataRegistro;
     }
 
     public double getConsumo() {
@@ -66,10 +59,6 @@ class Empresa extends Cliente {
 
     public void setEmail(String email) {
         this.email = email;
-    }
-
-    public void setDataRegistro(String dataRegistro) {
-        this.dataRegistro = dataRegistro;
     }
 
     public void setConsumo(double consumo) {
