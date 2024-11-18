@@ -5,6 +5,13 @@ public class Main {
 
         PontoDeColeta pontoColeta = new PontoDeColeta("Ponto de coleta", "Rua A, 123", 1000, "Ativo");
 
+        System.out.println("======================");
+        System.out.println("Informações do ponto de coleta:");
+        System.out.println("Tipo: " + pontoColeta.getTipo());
+        System.out.println("Endereço: " + pontoColeta.getEndereco());
+        System.out.println("Capacidade: " + pontoColeta.getCapacidadeMax());
+        System.out.println("Status: " + pontoColeta.getStatus());
+
         Residuo residuo = new Residuo("Papel", 1000, pontoColeta);
 
         System.out.println("\n\n======================");
@@ -58,6 +65,7 @@ public class Main {
                     telefoneCliente, emailCliente, cnpj);
         }
 
+        System.out.println("\n\n======================");
         System.out.println("Informações do cliente:");
         System.out.println("Nome: " + cliente.getNome());
         System.out.println("Tipo: " + cliente.getTipo());
