@@ -1,23 +1,23 @@
-
-class Pessoa extends Cliente {
+class Empresa extends Cliente {
     private String nome;
-    private String tipo = "Pessoa Física";
+    private String tipo;
     private String endereco;
     private String telefone;
     private String email;
     private String dataRegistro;
+    private String cnpj;
     private double consumo;
-    private String cpf;
 
-    public Pessoa(String nome, String endereco, String telefone, String email,
-            String dataRegistro, String cpf) {
-        super(nome, cpf, endereco, telefone, email, dataRegistro);
+    public Empresa(String nome, String endereco, String telefone, String email,
+            String dataRegistro, String cnpj) {
+        super(nome, cnpj, endereco, telefone, email, dataRegistro);
         this.nome = nome;
+        this.tipo = "Empresa";
         this.endereco = endereco;
         this.telefone = telefone;
         this.email = email;
         this.dataRegistro = dataRegistro;
-        this.cpf = cpf;
+        this.cnpj = cnpj;
     }
 
     public String getNome() {
@@ -46,10 +46,6 @@ class Pessoa extends Cliente {
 
     public double getConsumo() {
         return consumo;
-    }
-
-    public String getCpf() {
-        return cpf;
     }
 
     public void setNome(String nome) {
@@ -85,6 +81,10 @@ class Pessoa extends Cliente {
      */
     @Override
     public String verificarTipo() {
-        return "Tipo de cliente: Pessoa Física";
+        return "Tipo de cliente: Empresa";
+    }
+
+    public String getCnpj() {
+        return cnpj;
     }
 }
